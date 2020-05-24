@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form playground</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Playground</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1>Form Playground</h1>
+      <form class="form" method="POST" action=http://dev.cotenfrontend.pl>
+        <p>
+          <label
+            >Your name:
+            <input
+              class="form__item"
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Put your first name"
+          /></label>
+        </p>
+              
+        <p>
+          <label
+            >Your last name:
+            <input
+              class="form__item"
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Put your last name"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Your lucky number:
+            <input
+              class="form__item"
+              type="number"
+              name="luckyNumber"
+              id="luckyNumber"
+              placeholder="Please enter your lucky number"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Your phone number:
+            <input
+              class="form__item"
+              type="tel"
+              name="phoneNumber"
+              id="phoneNumber"
+              placeholder="Please enter your phone number"
+          /></label>
+        </p>
+
+        <p>
+          <label
+            >Your email address:
+            <input
+              class="form__item"
+              type="email"
+              name="emailAddress"
+              id="emailAddress"
+              placeholder="Please enter your email address"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Your password:
+            <input
+              class="form__item"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Please enter your password"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Range:
+            <input
+              class="form__item"
+              type="range"
+              name="range"
+              id="range"
+              min="0"
+              max="100"
+              step="10"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Your file:
+            <input class="form__item" type="file" name="avatar" id="avatar"
+          /></label>
+        </p>
+
+        <fieldset>
+          <legend>Address</legend>
+          <p>
+            <label
+              >Street address:
+              <input
+                class="form__input"
+                type="text"
+                id="street"
+                name="street"
+                placeholder="Please enter your street name"
+            /></label>
+          </p>
+          <p>
+            <label
+              >City:
+              <input
+                class="form__input"
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Please enter your city"
+            /></label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Favourite icecream flavour</legend>
+          <p>
+            <label
+              ><input type="radio" name="icecream" value="chocolate" />
+              Chocolate</label
+            >
+          </p>
+          <p>
+            <label
+              ><input type="radio" name="icecream" value="carmel" />
+              Carmel</label
+            >
+          </p>
+          <p>
+            <label
+              ><input type="radio" name="icecream" value="apple" /> Apple</label
+            >
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="band">Pick one band: </label>
+          <select name="band" id="band">
+            <option value="band-1"> Metalica</option>
+            <option value="band-1"> Taylor Swift</option>
+            <option value="band-1"> Coco Jamboo</option>
+          </select>
+        </p>
+
+        <p>
+          <label
+            ><input type="checkbox" name="agreement" value="agree" /> I
+            agree</label
+          >
+        </p>
+        <p>
+          <label for="yourStory">Enter your story: </label><br />
+          <textarea
+            name="yourStory"
+            id="yourStory"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Send" name="sendTo">
+        </p>
+      </form>
+    </main>
+  </body>
 </html>
